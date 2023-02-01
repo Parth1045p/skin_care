@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skin Disease Prediction</title>
+    <link rel="stylesheet" href="{% static 'skin_care/css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container container">
+        <input type="checkbox" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#about">Home</a></li>
+          <!-- <li><a href="#about">About</a></li> -->
+          <li><a href="#disease">Diseases</a></li>
+          <li><a href="{% url 'logi' %}">Login</a></li>
+          <li><a href="{% url 'regi' %}">Register</a></li>
+        </ul>
+        <div class="logo">
+          <img src="{% static 'skin_care/img/logo.png' %}" alt="logo_web" />
+        </div>
+        <!-- <h1 class="logo">FW</h1> -->
+      </div>
+    </nav>
+    <!-- <section class="showcase-area" id="showcase">
+      <h2 class="slogan">
+        Your skin is your best accessory. Take good care of it.
+      </h2>
+    </section> -->
+    <section id="about">
+      <div class="about-wrapper container">
+        <!-- <div class="about-img1">
+          <img src="{% static 'skin_care/img/home-img.svg'%}" alt="" />
+        </div> -->
+        <div class="about-text">
+          <h2>
+            Your skin is your best accessory.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Take
+            good care of it.
+          </h2>
+          <p>
+            The biggest organ of human is a skin, which mass it is approximately
+            around 4 kg to 5 kg. The skin has a surface area of about 1.2 m
+            <sup>2</sup> – 2.2 m <sup>2</sup>. It has many functions and
+            especially it is one of the most essential organs for human beings.
+            The uses and the function of the skin are protecting the body,
+            maintaining the temperature and sense as well.
+          </p>
+        </div>
+        <div class="about-img2">
+          <img src="{% static 'skin_care/img/bg1.jpg'%}" alt="" />
+        </div>
+      </div>
+    </section>
+    <section id="disease">
+      <h2>Types Of Skin Disease</h2>
+      <div class="skin-container container">
+        <div class="skin-type dis1">
+          <div class="img-container">
+            <img src="{% static 'skin_care/img/eczema1.jpg' %}" alt="" />
+            <div class="img-content">
+              <h3>Eczema</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="skin-type dis2">
+          <div class="img-container">
+            <img src="{% static 'skin_care/img/keratois1.jpg'%}" alt="" />
+            <div class="img-content">
+              <h3>Keratosis</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="skin-type dis3">
+          <div class="img-container">
+            <img src="{% static 'skin_care/img/dermatofibroma1.jpg'%}" alt="" />
+            <div class="img-content">
+              <h3>Dermatofibroma</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="skin-type dis4">
+          <div class="img-container">
+            <img
+              src="{% static 'skin_care/img/actinic_keratosis.jpg'%}"
+              alt=""
+            />
+            <div class="img-content">
+              <h3>Actinic Keratosis</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="skin-type dis5">
+          <div class="img-container">
+            <img
+              src="{% static 'skin_care/img/Basal_Cell_Carcinoma.jpg'%}"
+              alt=""
+            />
+            <div class="img-content">
+              <h3>Basal Cell Carcinoma</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="skin-type dis6">
+          <div class="img-container">
+            <img src="{% static 'skin_care/img/melanoma.jpg'%}" alt="" />
+            <div class="img-content">
+              <h3>Melanoma</h3>
+              <a href="#" class="btn btn-primary" target="_blank">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
