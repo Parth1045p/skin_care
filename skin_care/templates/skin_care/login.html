@@ -54,8 +54,23 @@
                 <div class="card-body p-5">
                   <h2 class="text-uppercase text-center mb-5">Login Account</h2>
 
+                  {% for msg in messages %}
+                  <div
+                    class="alert alert-warning alert-dismissible fade show h4"
+                    role="alert"
+                  >
+                    <strong>Hey!!</strong> {{msg}}
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  {% endfor %}
+
                   <form action="{% url 'logi'%}" method="POST">
-                    {% csrf_token%}
+                    {% csrf_token %}
                     <div class="form-outline mb-4">
                       <label class="form-label" for="form3Example1cg"
                         >Username</label

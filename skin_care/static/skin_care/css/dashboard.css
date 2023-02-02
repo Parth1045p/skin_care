@@ -90,6 +90,7 @@ body {
   background: #fff;
   color: #717171;
   border-bottom: 1px solid #e0e4e8;
+  border-bottom: 2px solid red;
 }
 
 .wrapper .main_content .info {

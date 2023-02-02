@@ -65,7 +65,9 @@
             <a href="#"><i class="fa fa-dashboard"></i> Dashboard</a>
           </li>
           <li>
-            <a href="#"><i class="fas fa-user"></i>Logged As</a>
+            {% for pt in pat1 %}
+            <a href="#"><i class="fas fa-user"></i>Logged As {{pt.username}}</a>
+            {% endfor %}
           </li>
           <!-- <li>
             <a href="#"><i class="fas fa-address-card"></i>About</a>
@@ -97,7 +99,11 @@
         </div>
       </div>
       <div class="main_content">
-        <div class="header">Welcome!! Have a nice day.</div>
+        {% for pt in pat1 %}
+        <div class="header">
+          <h2>Welcome {{pt.username}} !! Have a nice day.</h2>
+        </div>
+        {% endfor %}
         <div class="info">
           <div>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. A sed

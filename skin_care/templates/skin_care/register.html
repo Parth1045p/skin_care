@@ -56,6 +56,21 @@
                     Create an account
                   </h2>
 
+                  {% for msg in messages %}
+                  <div
+                    class="alert alert-warning alert-dismissible fade show h4"
+                    role="alert"
+                  >
+                    <strong>Hey!!</strong> {{msg}}
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="alert"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  {% endfor %}
+
                   <form action="{% url 'regi' %}" method="POST">
                     {% csrf_token%}
                     <div class="form-outline mb-4">
