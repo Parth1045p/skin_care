@@ -8,3 +8,6 @@ from django.contrib.auth.models import AbstractUser
 #     # is_patient = models.BooleanField(default=False)
 #     is_doctor = models.BooleanField(default=False)
 #     phonenumber = models.CharField(max_length=200,null=True)
+class skin(models.Model):
+    myimage = models.URLField()
+    name = models.CharField(max_length=100)

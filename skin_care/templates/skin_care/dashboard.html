@@ -57,6 +57,7 @@
     />
   </head>
   <body>
+    {% if user.is_authenticated %}
     <div class="wrapper">
       <div class="sidebar">
         <h2>Dashboard</h2>
@@ -150,5 +151,6 @@
         </div>
       </div>
     </div>
+    {% endif %}
   </body>
 </html>

@@ -59,7 +59,7 @@ def login_page(request):
 
 def dash_board(request):
 	user_id=request.user.id
-	print(user_id)
+	# print(user_id)
 	# pat=User.objects.get(pk=3)
 	pat=User.objects.filter(id=user_id)
 	print(pat)
